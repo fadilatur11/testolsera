@@ -10,7 +10,7 @@
 ## SYSTEM REQUIREMENT
 - PHP 7.4
 - MYSQL DATABASE
--
+- POSTMAN
 
 ## STEP
 1. Git Clone this repo or with this link <a href="https://github.com/fadilatur11/testolsera.git">https://github.com/fadilatur11/testolsera.git</a>
