@@ -9,7 +9,43 @@
 			"name": "ITEM",
 			"item": [
 				{
-					"name": "DATA ALL ITEM",
+					"name": "CREATE DATA ONLY ITEM",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\" : \"Motor\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/item",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"item"
+							]
+						},
+						"description": "Membuat data item, tanpa relasi dengan pajak"
+					},
+					"response": []
+				},
+				{
+					"name": "DATA  ITEM",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -37,7 +73,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/item",
+							"raw": "http://localhost:8000/api/item/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -45,45 +81,10 @@
 							"port": "8000",
 							"path": [
 								"api",
-								"item"
+								"item",
+								"1"
 							]
 						}
-					},
-					"response": []
-				},
-				{
-					"name": "CREATE DATA ONLY ITEM",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"type": "text",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"nama\" : \"Komputer\"\r\n}"
-						},
-						"url": {
-							"raw": "http://localhost:8000/api/item",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"item"
-							]
-						},
-						"description": "Membuat data item, tanpa relasi dengan pajak"
 					},
 					"response": []
 				},
@@ -168,7 +169,48 @@
 			"name": "PAJAK",
 			"item": [
 				{
-					"name": "DATA ALL PAJAK",
+					"name": "CREATE DATA ONLY PAJAK",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\" : \"PPN\",\r\n    \"rate\" : \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/pajak",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pajak"
+							]
+						},
+						"description": "Cara membuat data pajak. klik tab Body, kemudian click checkbox raw"
+					},
+					"response": []
+				},
+				{
+					"name": "DATA PAJAK",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -196,7 +238,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/pajak",
+							"raw": "http://localhost:8000/api/pajak/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -204,51 +246,11 @@
 							"port": "8000",
 							"path": [
 								"api",
-								"pajak"
+								"pajak",
+								"1"
 							]
 						},
 						"description": "ENDPOINT GET ALL PAJAK"
-					},
-					"response": []
-				},
-				{
-					"name": "CREATE DATA ONLY PAJAK",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"nama\" : \"Administrasi\",\r\n    \"rate\" : \"5\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8000/api/pajak",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"pajak"
-							]
-						},
-						"description": "Cara membuat data pajak. klik tab Body, kemudian click checkbox raw"
 					},
 					"response": []
 				},
@@ -384,7 +386,7 @@
 					"response": []
 				},
 				{
-					"name": "ALL DATA RELATION ITEM AND PAJAK",
+					"name": "DATA RELATION ITEM AND PAJAK",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -455,7 +457,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/item/2",
+							"raw": "http://localhost:8000/api/item/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -464,7 +466,7 @@
 							"path": [
 								"api",
 								"item",
-								"2"
+								"3"
 							]
 						}
 					},
