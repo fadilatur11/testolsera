@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\ItemRequest;
 use App\Services\ItemService;
 use Exception;
+// use DB;
+
 
 class ItemController extends Controller
 {
@@ -16,8 +18,9 @@ class ItemController extends Controller
      */
     public function index()
     {
+        // DB::enableQueryLog();
         $item = ItemService::index()->get();
-
+        // dd(DB::getQueryLog());
         $response = [
             'data' => $item
         ];
