@@ -18,7 +18,7 @@ class ItemService{
         $item->nama = $data['nama'];
        
         if ($item->save()) {
-            $item->pajak()->attach($data['pajak_id']);
+            $item->pajak()->attach(@$data['pajak_id']);
         }
 
         return $item;

@@ -18,4 +18,4 @@
 3. <b>Create Database</b> with the name <b>olseratest</b> and username database is <b>root</b> or you can see in file <b>.env</b> or <b>database.php</b>
 4. Run Command <b>php artisan migrate</b> to migrate all table in migration laravel
 5. Run <b>php artisan serve</b>
-6. Open Postman and Import <b>Dokumentasi.json</b> in folder this project. You can try <b>all access endpoint</b> for this project
+6. Open Postman and Import <b>Dokumentasi.json(Collection v2.1)</b> in folder this project. You can try <b>all access endpoint</b> for this project

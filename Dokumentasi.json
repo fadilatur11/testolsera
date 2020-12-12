@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "679e88fc-9d70-487e-a004-2621fa027d04",
+		"_postman_id": "4a2d9327-5962-41d0-9e8d-8af71e0cf0c2",
 		"name": "OLSERA",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -69,7 +69,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nama\" : \"Laptop\"\r\n}"
+							"raw": "{\r\n    \"nama\" : \"Komputer\"\r\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8000/api/item",
@@ -108,7 +108,7 @@
 							"raw": "{\r\n    \"nama\" : \"Monitor\"\r\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/item/4",
+							"raw": "http://localhost:8000/api/item/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -117,7 +117,7 @@
 							"path": [
 								"api",
 								"item",
-								"4"
+								"1"
 							]
 						},
 						"description": "Endpoint update data item dengan menggunakan parameter id"
@@ -145,7 +145,7 @@
 							"raw": "{\r\n    \"nama\" : \"Monitor\"\r\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/item/3",
+							"raw": "http://localhost:8000/api/item/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -154,7 +154,7 @@
 							"path": [
 								"api",
 								"item",
-								"3"
+								"1"
 							]
 						}
 					},
@@ -278,7 +278,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/pajak/4",
+							"raw": "http://localhost:8000/api/pajak/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -287,7 +287,7 @@
 							"path": [
 								"api",
 								"pajak",
-								"4"
+								"1"
 							]
 						},
 						"description": "Update data only pajak"
@@ -320,7 +320,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/pajak/5",
+							"raw": "http://localhost:8000/api/pajak/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -329,7 +329,7 @@
 							"path": [
 								"api",
 								"pajak",
-								"5"
+								"1"
 							]
 						},
 						"description": "Delete data only pajak"
@@ -455,7 +455,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/item/1",
+							"raw": "http://localhost:8000/api/item/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -464,7 +464,7 @@
 							"path": [
 								"api",
 								"item",
-								"1"
+								"2"
 							]
 						}
 					},
