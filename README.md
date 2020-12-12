@@ -14,8 +14,8 @@
 
 ## STEP
 1. Git Clone this repo or with this link <a href="https://github.com/fadilatur11/testolsera.git">https://github.com/fadilatur11/testolsera.git</a>
-2. Run command Composer Install for install vendor laravel
-3. Create Database with the name olseratest and username database is root or you can see in file .env or database.php
-4. Run Command php artisan migrate to migrate all table in migration laravel
-5. Run php artisan serve
-6. Open Postman and Import Dokumentasi.json in folder this project. You can try access all endpoint for this project
+2. Run command <b>Composer Install</b> for install vendor laravel
+3. <b>Create Database</b> with the name <b>olseratest</b> and username database is <b>root</b> or you can see in file <b>.env</b> or <b>database.php</b>
+4. Run Command <b>php artisan migrate</b> to migrate all table in migration laravel
+5. Run <b>php artisan serve</b>
+6. Open Postman and Import <b>Dokumentasi.json</b> in folder this project. You can try <b>all access endpoint</b> for this project
