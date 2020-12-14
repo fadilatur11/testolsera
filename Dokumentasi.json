@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "4a2d9327-5962-41d0-9e8d-8af71e0cf0c2",
+		"_postman_id": "13bdafa8-e0c9-4299-8ac4-04d013091ef1",
 		"name": "OLSERA",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -186,7 +186,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nama\" : \"PPN\",\r\n    \"rate\" : \"2\"\r\n}",
+							"raw": "{\r\n    \"nama\" : \"Bangungan\",\r\n    \"rate\" : \"5\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -250,7 +250,7 @@
 								"1"
 							]
 						},
-						"description": "ENDPOINT GET ALL PAJAK"
+						"description": "GET DATA DETAIL PAJAK http://localhost:8000/api/pajak/1\r\n\r\nGET DATA ALL PAJAK http://localhost:8000/api/pajak"
 					},
 					"response": []
 				},
@@ -314,7 +314,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nama\" : \"PPh\",\r\n    \"rate\" : \"3\"\r\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -381,7 +381,8 @@
 								"api",
 								"item"
 							]
-						}
+						},
+						"description": "CREATE DATA ITEM AND RELATION PAJAK.\r\nclick tab body and send data with json format in tab raw\r\n\r\nexample :\r\n{\r\n    \"nama\" : \"Celana Jeans\",\r\n    \"pajak_id\" : [1,2,3]\r\n}"
 					},
 					"response": []
 				},

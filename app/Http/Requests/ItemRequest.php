@@ -25,7 +25,7 @@ class ItemRequest extends FormRequest
     {
         return [
             'nama' => 'required',
-            'pajak_id' => 'array|size:2'
+            'pajak_id' => 'array|array|min:2'
         ];
     }
 
