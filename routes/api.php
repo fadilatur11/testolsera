@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\API\{ItemController,PajakController};
+use App\Http\Controllers\API\{ItemController,PajakController, UserController};
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -18,11 +18,16 @@ use Illuminate\Support\Facades\Route;
 // Route::middleware('auth:api')->get('/user', function (Request $request) {
 //     return $request->user();
 // });
+Route::post('login', [UserController::class,'login']);
+Route::post('register', [UserController::class,'register']);
 
-Route::resource('pajak', PajakController::class)->except([
-    'create', 'edit'
-]);
+Route::group(['middleware' => 'auth:api'], function(){
 
-Route::resource('item', ItemController::class)->except([
-    'create', 'edit'
-]);
+    Route::resource('pajak', PajakController::class)->except([
+        'create', 'edit'
+    ])->middleware(['xssfilter','role:admin']);
+    
+    Route::resource('item', ItemController::class)->except([
+        'create', 'edit'
+    ])->middleware(['xssfilter','role:admin']);
+});
