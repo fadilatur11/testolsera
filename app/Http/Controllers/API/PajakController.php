@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\PajakRequest;
 use App\Services\PajakService;
 use Exception;
+use Illuminate\Support\Facades\Auth;
 
 class PajakController extends Controller
 {
@@ -16,6 +17,7 @@ class PajakController extends Controller
      */
     public function index()
     {
+        // dd(Auth::user()->hasRole('admin'));
         $pajak = PajakService::index();
         // $pajak->where('condition');
 
