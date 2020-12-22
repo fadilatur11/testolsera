@@ -11,6 +11,16 @@
 				{
 					"name": "CREATE DATA ONLY ITEM",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTMyYTc4ODliMGM0MDdiOGRmNTdlNGM5YzBiN2Y3ZmU1NTY4ZTk4MjdjMDM0ZTViYjc0NmVjMmVmNzY1ZmQ1NzczZDkyZTQyMGNiYzEwMDgiLCJpYXQiOiIxNjA4NTk2MjIyLjIxOTA0NyIsIm5iZiI6IjE2MDg1OTYyMjIuMjE5MDUyIiwiZXhwIjoiMTY0MDEzMjIyMi4yMDEwMjIiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.HhHiZUZFOgJLUi8gIDxa9RP-SjYJWxjINsfHTZZDl2p-l5zATqsZG4GGGdiCeO_S61Q_sbQScatT3oisVYgaTnHrIO8QpeK_p4qZiYstkZDpBOC-LQg9Jz6tb9XfWZtFvwUykU-ZyO_HT5Bt_eoJbcAXUDitvW0mjxLRoLKqIlKQiIUrYSkAZlM4W35IKykA_QVJTN33cip92p153QS0g7YXGuP1HFx7v213NZh9sODLy_2HF5X9ZzI1VZb265ov6uFF1TCfr0VlluntdFGITRsvNOiVv7K2KDtukL2w2w7n34wnzl70LjybKRGILzOHGH3Y47WR9tzqsCa5GY8FbbOix5sfOYsgkRF8s-tlv1Rmv5QVC5s91S-lrngk_EEl4MH-DYrGqyq0TPAm3kJERZN6i7X3FmVUnKmPheuqh3_YffJZ2GjLecoGkTjkXrMW6XdsT705MV11B1_kCcRnlvf_KxBFVV5jRTXKJKNryWxmfmF4EudxLvMftaR2_7NWyWCJ4NHxkG6ZGik420jvEKP-rd_zSR9CP6zdhmz843fgraJ2sa0bbUGKqYXMOBNUaqyeSB_47KwW9d0CQVu2absAvCQHxPcTHrKkmz0kjO_HaauUtCTHx82NTMqNOhW-bmwDQSpReR53d5K-NJePb098-OSW04IchHA9BU3CEmM",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [
 							{
@@ -50,6 +60,16 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTMyYTc4ODliMGM0MDdiOGRmNTdlNGM5YzBiN2Y3ZmU1NTY4ZTk4MjdjMDM0ZTViYjc0NmVjMmVmNzY1ZmQ1NzczZDkyZTQyMGNiYzEwMDgiLCJpYXQiOiIxNjA4NTk2MjIyLjIxOTA0NyIsIm5iZiI6IjE2MDg1OTYyMjIuMjE5MDUyIiwiZXhwIjoiMTY0MDEzMjIyMi4yMDEwMjIiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.HhHiZUZFOgJLUi8gIDxa9RP-SjYJWxjINsfHTZZDl2p-l5zATqsZG4GGGdiCeO_S61Q_sbQScatT3oisVYgaTnHrIO8QpeK_p4qZiYstkZDpBOC-LQg9Jz6tb9XfWZtFvwUykU-ZyO_HT5Bt_eoJbcAXUDitvW0mjxLRoLKqIlKQiIUrYSkAZlM4W35IKykA_QVJTN33cip92p153QS0g7YXGuP1HFx7v213NZh9sODLy_2HF5X9ZzI1VZb265ov6uFF1TCfr0VlluntdFGITRsvNOiVv7K2KDtukL2w2w7n34wnzl70LjybKRGILzOHGH3Y47WR9tzqsCa5GY8FbbOix5sfOYsgkRF8s-tlv1Rmv5QVC5s91S-lrngk_EEl4MH-DYrGqyq0TPAm3kJERZN6i7X3FmVUnKmPheuqh3_YffJZ2GjLecoGkTjkXrMW6XdsT705MV11B1_kCcRnlvf_KxBFVV5jRTXKJKNryWxmfmF4EudxLvMftaR2_7NWyWCJ4NHxkG6ZGik420jvEKP-rd_zSR9CP6zdhmz843fgraJ2sa0bbUGKqYXMOBNUaqyeSB_47KwW9d0CQVu2absAvCQHxPcTHrKkmz0kjO_HaauUtCTHx82NTMqNOhW-bmwDQSpReR53d5K-NJePb098-OSW04IchHA9BU3CEmM",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [
 							{
@@ -91,6 +111,16 @@
 				{
 					"name": "UPDATE DATA ONLY ITEM",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTMyYTc4ODliMGM0MDdiOGRmNTdlNGM5YzBiN2Y3ZmU1NTY4ZTk4MjdjMDM0ZTViYjc0NmVjMmVmNzY1ZmQ1NzczZDkyZTQyMGNiYzEwMDgiLCJpYXQiOiIxNjA4NTk2MjIyLjIxOTA0NyIsIm5iZiI6IjE2MDg1OTYyMjIuMjE5MDUyIiwiZXhwIjoiMTY0MDEzMjIyMi4yMDEwMjIiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.HhHiZUZFOgJLUi8gIDxa9RP-SjYJWxjINsfHTZZDl2p-l5zATqsZG4GGGdiCeO_S61Q_sbQScatT3oisVYgaTnHrIO8QpeK_p4qZiYstkZDpBOC-LQg9Jz6tb9XfWZtFvwUykU-ZyO_HT5Bt_eoJbcAXUDitvW0mjxLRoLKqIlKQiIUrYSkAZlM4W35IKykA_QVJTN33cip92p153QS0g7YXGuP1HFx7v213NZh9sODLy_2HF5X9ZzI1VZb265ov6uFF1TCfr0VlluntdFGITRsvNOiVv7K2KDtukL2w2w7n34wnzl70LjybKRGILzOHGH3Y47WR9tzqsCa5GY8FbbOix5sfOYsgkRF8s-tlv1Rmv5QVC5s91S-lrngk_EEl4MH-DYrGqyq0TPAm3kJERZN6i7X3FmVUnKmPheuqh3_YffJZ2GjLecoGkTjkXrMW6XdsT705MV11B1_kCcRnlvf_KxBFVV5jRTXKJKNryWxmfmF4EudxLvMftaR2_7NWyWCJ4NHxkG6ZGik420jvEKP-rd_zSR9CP6zdhmz843fgraJ2sa0bbUGKqYXMOBNUaqyeSB_47KwW9d0CQVu2absAvCQHxPcTHrKkmz0kjO_HaauUtCTHx82NTMqNOhW-bmwDQSpReR53d5K-NJePb098-OSW04IchHA9BU3CEmM",
+									"type": "string"
+								}
+							]
+						},
 						"method": "PUT",
 						"header": [
 							{
@@ -128,6 +158,16 @@
 				{
 					"name": "DELETE DATA ONLY ITEM",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTMyYTc4ODliMGM0MDdiOGRmNTdlNGM5YzBiN2Y3ZmU1NTY4ZTk4MjdjMDM0ZTViYjc0NmVjMmVmNzY1ZmQ1NzczZDkyZTQyMGNiYzEwMDgiLCJpYXQiOiIxNjA4NTk2MjIyLjIxOTA0NyIsIm5iZiI6IjE2MDg1OTYyMjIuMjE5MDUyIiwiZXhwIjoiMTY0MDEzMjIyMi4yMDEwMjIiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.HhHiZUZFOgJLUi8gIDxa9RP-SjYJWxjINsfHTZZDl2p-l5zATqsZG4GGGdiCeO_S61Q_sbQScatT3oisVYgaTnHrIO8QpeK_p4qZiYstkZDpBOC-LQg9Jz6tb9XfWZtFvwUykU-ZyO_HT5Bt_eoJbcAXUDitvW0mjxLRoLKqIlKQiIUrYSkAZlM4W35IKykA_QVJTN33cip92p153QS0g7YXGuP1HFx7v213NZh9sODLy_2HF5X9ZzI1VZb265ov6uFF1TCfr0VlluntdFGITRsvNOiVv7K2KDtukL2w2w7n34wnzl70LjybKRGILzOHGH3Y47WR9tzqsCa5GY8FbbOix5sfOYsgkRF8s-tlv1Rmv5QVC5s91S-lrngk_EEl4MH-DYrGqyq0TPAm3kJERZN6i7X3FmVUnKmPheuqh3_YffJZ2GjLecoGkTjkXrMW6XdsT705MV11B1_kCcRnlvf_KxBFVV5jRTXKJKNryWxmfmF4EudxLvMftaR2_7NWyWCJ4NHxkG6ZGik420jvEKP-rd_zSR9CP6zdhmz843fgraJ2sa0bbUGKqYXMOBNUaqyeSB_47KwW9d0CQVu2absAvCQHxPcTHrKkmz0kjO_HaauUtCTHx82NTMqNOhW-bmwDQSpReR53d5K-NJePb098-OSW04IchHA9BU3CEmM",
+									"type": "string"
+								}
+							]
+						},
 						"method": "DELETE",
 						"header": [
 							{
@@ -162,8 +202,7 @@
 					"response": []
 				}
 			],
-			"description": "Endpoint Create, Read, Update and Delete Item",
-			"protocolProfileBehavior": {}
+			"description": "Endpoint Create, Read, Update and Delete Item"
 		},
 		{
 			"name": "PAJAK",
@@ -171,6 +210,16 @@
 				{
 					"name": "CREATE DATA ONLY PAJAK",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTMyYTc4ODliMGM0MDdiOGRmNTdlNGM5YzBiN2Y3ZmU1NTY4ZTk4MjdjMDM0ZTViYjc0NmVjMmVmNzY1ZmQ1NzczZDkyZTQyMGNiYzEwMDgiLCJpYXQiOiIxNjA4NTk2MjIyLjIxOTA0NyIsIm5iZiI6IjE2MDg1OTYyMjIuMjE5MDUyIiwiZXhwIjoiMTY0MDEzMjIyMi4yMDEwMjIiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.HhHiZUZFOgJLUi8gIDxa9RP-SjYJWxjINsfHTZZDl2p-l5zATqsZG4GGGdiCeO_S61Q_sbQScatT3oisVYgaTnHrIO8QpeK_p4qZiYstkZDpBOC-LQg9Jz6tb9XfWZtFvwUykU-ZyO_HT5Bt_eoJbcAXUDitvW0mjxLRoLKqIlKQiIUrYSkAZlM4W35IKykA_QVJTN33cip92p153QS0g7YXGuP1HFx7v213NZh9sODLy_2HF5X9ZzI1VZb265ov6uFF1TCfr0VlluntdFGITRsvNOiVv7K2KDtukL2w2w7n34wnzl70LjybKRGILzOHGH3Y47WR9tzqsCa5GY8FbbOix5sfOYsgkRF8s-tlv1Rmv5QVC5s91S-lrngk_EEl4MH-DYrGqyq0TPAm3kJERZN6i7X3FmVUnKmPheuqh3_YffJZ2GjLecoGkTjkXrMW6XdsT705MV11B1_kCcRnlvf_KxBFVV5jRTXKJKNryWxmfmF4EudxLvMftaR2_7NWyWCJ4NHxkG6ZGik420jvEKP-rd_zSR9CP6zdhmz843fgraJ2sa0bbUGKqYXMOBNUaqyeSB_47KwW9d0CQVu2absAvCQHxPcTHrKkmz0kjO_HaauUtCTHx82NTMqNOhW-bmwDQSpReR53d5K-NJePb098-OSW04IchHA9BU3CEmM",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [
 							{
@@ -186,7 +235,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nama\" : \"Bangungan\",\r\n    \"rate\" : \"5\"\r\n}",
+							"raw": "{\r\n    \"nama\" : \"<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>\",\r\n    \"rate\" : \"2\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -215,6 +264,16 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjUwOGY5NzA2N2FhZTU4ZGVlNjFkMGVhODlhODYzMGQ5NWFkYjEzNDc4YmRkY2VlOGFlMjYzZWYyY2Q3NWRlMDBlMzFiMTk2ZTgyYjYwZDMiLCJpYXQiOiIxNjA4NjE0NjQ2LjgyNjA0NSIsIm5iZiI6IjE2MDg2MTQ2NDYuODI2MDUwIiwiZXhwIjoiMTY0MDE1MDY0Ni44MDUyNDYiLCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.XFbwB_D8D3NMFaYnIrE6SYJ-CefHUVfrscVvqdLpI4e7HP-ee4__8sL5d4r7lNOBuEUhCrbgrtzc6V6OaoXsEeDpsIq_ZMMFwbIl8TvrIUYZRyfkNuTAjMt6-1zrWJrVFxh8HyxWiWWFyVxoVCC7XsMyMc7nmQTsDHYoHGgdEQzYwN0lUVF71m1Vii9ag1N0qwb8y45iVbwNPm7cl4c2lQkYTEZWFFCJSbW5X0ZCvhuFnpoShHX8NDkzwOdw-TiLuSYx0ifhr90Sjd0eA7pgE_uCdkIPALPSt8d22VLDgyqUPAv17IotVLiPVYmoKsSIXoceX3eX3n0hjHQR0gQCyBATlJwEbvL4_voMwax4iwkw2mk2mBRhs35WfyS84-kSbdGKE2TRztvsGPkoRbezRBlmm7-IV2sPzxwVPMNcP5_cSbQUD4gI_5vwmSkSAYOxMxzlAxRi2z1bD_qlcEe-W6sVzE2hgAJVf4CG6uoGcLrFaMuNdhmSkYcDlQtbPMCzuRWilIoFfqVPYaD0e3xHy5sRK3WztoIgd2Sy642H4moWl4O6gzLflHVSGZJwuH8jvil1tXntCq2HPox4_dGMknZlEe0cRnohHXcGrH6Hoprc_GDbn61S5igkL3Qj7F7MYPy9StHeXyc4UEdSZFtDOhSID2ZnHlfisooR47EShhA",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [
 							{
@@ -238,7 +297,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/pajak/1",
+							"raw": "http://localhost:8000/api/pajak",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -246,8 +305,7 @@
 							"port": "8000",
 							"path": [
 								"api",
-								"pajak",
-								"1"
+								"pajak"
 							]
 						},
 						"description": "GET DATA DETAIL PAJAK http://localhost:8000/api/pajak/1\r\n\r\nGET DATA ALL PAJAK http://localhost:8000/api/pajak"
@@ -257,6 +315,16 @@
 				{
 					"name": "UPDATE DATA ONLY PAJAK",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTMyYTc4ODliMGM0MDdiOGRmNTdlNGM5YzBiN2Y3ZmU1NTY4ZTk4MjdjMDM0ZTViYjc0NmVjMmVmNzY1ZmQ1NzczZDkyZTQyMGNiYzEwMDgiLCJpYXQiOiIxNjA4NTk2MjIyLjIxOTA0NyIsIm5iZiI6IjE2MDg1OTYyMjIuMjE5MDUyIiwiZXhwIjoiMTY0MDEzMjIyMi4yMDEwMjIiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.HhHiZUZFOgJLUi8gIDxa9RP-SjYJWxjINsfHTZZDl2p-l5zATqsZG4GGGdiCeO_S61Q_sbQScatT3oisVYgaTnHrIO8QpeK_p4qZiYstkZDpBOC-LQg9Jz6tb9XfWZtFvwUykU-ZyO_HT5Bt_eoJbcAXUDitvW0mjxLRoLKqIlKQiIUrYSkAZlM4W35IKykA_QVJTN33cip92p153QS0g7YXGuP1HFx7v213NZh9sODLy_2HF5X9ZzI1VZb265ov6uFF1TCfr0VlluntdFGITRsvNOiVv7K2KDtukL2w2w7n34wnzl70LjybKRGILzOHGH3Y47WR9tzqsCa5GY8FbbOix5sfOYsgkRF8s-tlv1Rmv5QVC5s91S-lrngk_EEl4MH-DYrGqyq0TPAm3kJERZN6i7X3FmVUnKmPheuqh3_YffJZ2GjLecoGkTjkXrMW6XdsT705MV11B1_kCcRnlvf_KxBFVV5jRTXKJKNryWxmfmF4EudxLvMftaR2_7NWyWCJ4NHxkG6ZGik420jvEKP-rd_zSR9CP6zdhmz843fgraJ2sa0bbUGKqYXMOBNUaqyeSB_47KwW9d0CQVu2absAvCQHxPcTHrKkmz0kjO_HaauUtCTHx82NTMqNOhW-bmwDQSpReR53d5K-NJePb098-OSW04IchHA9BU3CEmM",
+									"type": "string"
+								}
+							]
+						},
 						"method": "PUT",
 						"header": [
 							{
@@ -299,6 +367,16 @@
 				{
 					"name": "DELETE DATA ONLY PAJAK",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTMyYTc4ODliMGM0MDdiOGRmNTdlNGM5YzBiN2Y3ZmU1NTY4ZTk4MjdjMDM0ZTViYjc0NmVjMmVmNzY1ZmQ1NzczZDkyZTQyMGNiYzEwMDgiLCJpYXQiOiIxNjA4NTk2MjIyLjIxOTA0NyIsIm5iZiI6IjE2MDg1OTYyMjIuMjE5MDUyIiwiZXhwIjoiMTY0MDEzMjIyMi4yMDEwMjIiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.HhHiZUZFOgJLUi8gIDxa9RP-SjYJWxjINsfHTZZDl2p-l5zATqsZG4GGGdiCeO_S61Q_sbQScatT3oisVYgaTnHrIO8QpeK_p4qZiYstkZDpBOC-LQg9Jz6tb9XfWZtFvwUykU-ZyO_HT5Bt_eoJbcAXUDitvW0mjxLRoLKqIlKQiIUrYSkAZlM4W35IKykA_QVJTN33cip92p153QS0g7YXGuP1HFx7v213NZh9sODLy_2HF5X9ZzI1VZb265ov6uFF1TCfr0VlluntdFGITRsvNOiVv7K2KDtukL2w2w7n34wnzl70LjybKRGILzOHGH3Y47WR9tzqsCa5GY8FbbOix5sfOYsgkRF8s-tlv1Rmv5QVC5s91S-lrngk_EEl4MH-DYrGqyq0TPAm3kJERZN6i7X3FmVUnKmPheuqh3_YffJZ2GjLecoGkTjkXrMW6XdsT705MV11B1_kCcRnlvf_KxBFVV5jRTXKJKNryWxmfmF4EudxLvMftaR2_7NWyWCJ4NHxkG6ZGik420jvEKP-rd_zSR9CP6zdhmz843fgraJ2sa0bbUGKqYXMOBNUaqyeSB_47KwW9d0CQVu2absAvCQHxPcTHrKkmz0kjO_HaauUtCTHx82NTMqNOhW-bmwDQSpReR53d5K-NJePb098-OSW04IchHA9BU3CEmM",
+									"type": "string"
+								}
+							]
+						},
 						"method": "DELETE",
 						"header": [
 							{
@@ -339,8 +417,7 @@
 					"response": []
 				}
 			],
-			"description": "Endpoint Create, Read, Update and Delete Pajak",
-			"protocolProfileBehavior": {}
+			"description": "Endpoint Create, Read, Update and Delete Pajak"
 		},
 		{
 			"name": "RELATION ITEM AND PAJAK",
@@ -474,9 +551,164 @@
 					"response": []
 				}
 			],
-			"description": "Create Relation Item And Pajak",
-			"protocolProfileBehavior": {}
+			"description": "Create Relation Item And Pajak"
+		},
+		{
+			"name": "TOKEN AUTH",
+			"item": [
+				{
+					"name": "CREATE TOKEN REGISTER",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Rio",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "rio@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "acception",
+									"type": "text"
+								},
+								{
+									"key": "c_password",
+									"value": "acception",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LOGIN AUTH",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "fadhil@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "acception",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
