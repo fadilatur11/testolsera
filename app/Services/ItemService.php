@@ -3,52 +3,38 @@
 namespace App\Services;
 
 use App\Models\Item;
+use App\Http\Repositories\ItemRepository;
 
 class ItemService{
 
-    static function index()
+    public function __construct()
     {
-        $item = Item::whereHas('pajak')->with('pajak')->select(['id', 'nama']);
-        return $item;
+        $this->repository = new ItemRepository;
     }
 
-    static function create($data)
+    public function index()
     {
-        $item = new Item();
-        $item->nama = $data['nama'];
-       
-        if ($item->save()) {
-            $item->pajak()->attach(@$data['pajak_id']);
-        }
-
-        return $item;
+        return $this->repository->index();
     }
 
-    static function show($id)
+    public function create($data)
     {
-        $data = Item::with('pajak')->where('id', $id);
-        return $data;
+       return $this->repository->create($data);
     }
 
-    static function update($data, $id)
+    public function show($id)
     {
-        $item = Item::findOrFail($id);
-        $item->nama = $data['nama'];
-        
-        if($item->save())
-        {
-            $item->pajak()->detach();
-            $item->pajak()->attach(@$data['pajak_id']);
-        }
-
-        return $item;
+        return $this->repository->show($id);
     }
 
-    static function destroy($id)
+    public function update($data, $id)
     {
-        $data = Item::findOrFail($id);
-        $data->delete();
-        return $data;
+       return $this->repository->update($data,$id);
+    }
+
+    public function destroy($id)
+    {
+        return $this->repository->destroy($id);
     }
 }
 ?>
