@@ -2,46 +2,38 @@
 
 namespace App\Services;
 
-use App\Models\Pajak;
+use App\Http\Repositories\PajakRepository;
 
 class PajakService{
 
-    static function index()
+    public function __construct()
     {
-        $data = Pajak::get();
-        return $data;
+        $this->repository = new PajakRepository;
     }
 
-    static function create($data)
+    public function index()
     {
-        $pajak = new Pajak();
-        $pajak->nama = $data['nama'];
-        $pajak->rate = $data['rate'];
-
-        $pajak->save();
-        return $pajak;
+        return $this->repository->index();
     }
 
-    static function show($id)
+    public function create($data)
     {
-        $pajak = Pajak::where('id',$id);
-        return $pajak;
+       return $this->repository->create($data);
     }
 
-    static function update($data,$id)
+    public function show($id)
     {
-        $pajak = Pajak::findOrFail($id);
-        $pajak->nama = $data['nama'];
-        $pajak->rate = $data['rate'];
-        $pajak->save();
-        return $pajak;
+       return $this->repository->show($id);
     }
 
-    static function destroy($id)
+    public function update($data,$id)
     {
-        $pajak = Pajak::findOrFail($id);
-        $pajak->delete();
-        return $pajak;
+       return $this->repository->update($data,$id);
+    }
+
+    public function destroy($id)
+    {
+        return $this->repository->destroy($id);
     }
 }
 ?>

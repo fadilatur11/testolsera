@@ -2,7 +2,6 @@
 
 namespace App\Services;
 
-use App\Models\Item;
 use App\Http\Repositories\ItemRepository;
 
 class ItemService{

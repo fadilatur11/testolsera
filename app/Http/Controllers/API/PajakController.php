@@ -6,10 +6,13 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\PajakRequest;
 use App\Services\PajakService;
 use Exception;
-use Illuminate\Support\Facades\Auth;
 
 class PajakController extends Controller
 {
+    public function __construct()
+    {
+        $this->model = new PajakService;
+    }
     /**
      * Display a listing of the resource.
      *
@@ -18,7 +21,7 @@ class PajakController extends Controller
     public function index()
     {
         // dd(Auth::user()->hasRole('admin'));
-        $pajak = PajakService::index();
+        $pajak = $this->model->index();
         // $pajak->where('condition');
 
         $response = [
@@ -48,7 +51,7 @@ class PajakController extends Controller
     public function store(PajakRequest $request)
     { 
         try {
-            PajakService::create($request->all());
+            $this->model->create($request->all());
             $success = 1;
             $message = "Data Pajak Berhasil Disimpan";
         } catch (Exception $ex) {
@@ -73,7 +76,7 @@ class PajakController extends Controller
      */
     public function show($id)
     {
-        $pajak = PajakService::show($id)->first();
+        $pajak = $this->model->show($id)->first();
 
         if($pajak)
         {
@@ -117,7 +120,7 @@ class PajakController extends Controller
     public function update(PajakRequest $request, $id)
     {
         try {
-            PajakService::update($request->all(), $id);
+            $this->model->update($request->all(), $id);
             $success = 1;
             $message = "Data Pajak Berhasil Di Update";
         } catch (Exception $ex) {
@@ -144,7 +147,7 @@ class PajakController extends Controller
     public function destroy($id)
     {
         try {
-           PajakService::destroy($id);
+           $this->model->destroy($id);
             $success = 1;
             $message = "Data Pajak Berhasil Di Delete";
         } catch (Exception $ex) {
