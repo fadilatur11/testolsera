@@ -11,6 +11,10 @@ use Exception;
 
 class ItemController extends Controller
 {
+    public function __construct()
+    {
+        $this->service = new ItemService;
+    }
     /**
      * Display a listing of the resource.
      *
@@ -19,7 +23,7 @@ class ItemController extends Controller
     public function index()
     {
         // DB::enableQueryLog();
-        $item = ItemService::index()->get();
+        $item = $this->service->index()->get();
         // dd(DB::getQueryLog());
         $response = [
             'data' => $item
@@ -49,7 +53,7 @@ class ItemController extends Controller
     {
         // try to store the item
         try {
-            ItemService::create($request->all());
+            $this->service->create($request->all());
             $success = 1;
             $message = "Data Item Berhasil Disimpan";
         } catch (Exception $ex) {
@@ -75,7 +79,7 @@ class ItemController extends Controller
      */
     public function show($id)
     {
-        $item = ItemService::show($id)->first();
+        $item = $this->service->show($id)->first();
         if($item)
         {
             $success = 1;
@@ -119,7 +123,7 @@ class ItemController extends Controller
     public function update(ItemRequest $request, $id)
     {
         try {
-            ItemService::update($request->all(),$id);
+            $this->service->update($request->all(),$id);
             $success = 1;
             $message = "Data Item Berhasil Di Update";
         } catch (Exception $ex) {
@@ -146,7 +150,7 @@ class ItemController extends Controller
     public function destroy($id)
     {
         try {
-            ItemService::destroy($id);
+            $this->service->destroy($id);
             $success = 1;
             $message = "Data Item Berhasil Di Delete";
         } catch (Exception $ex) {
